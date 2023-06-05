@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="251dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/add_second_number"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/ligth_gray"
+        app:layout_constraintTop_toBottomOf="@+id/number1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="82dp" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="253dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="@string/add_first_number"
+        android:inputType="number"
+        android:textColor="@color/ligth_gray"
+        android:textColorHint="@color/ligth_gray"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="CALCULATOR"
+        android:textColor="@color/gray"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <TextView
+        android:id="@+id/EqualTexView"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/ligth_gray"
+        app:layout_constraintTop_toBottomOf="@+id/number2"
+        tools:ignore="MissingConstraints,NotSibling"
+
+        tools:layout_editor_absoluteX="78dp" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="466dp">
+
+
+        <Button
+            android:id="@+id/PlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/ligth_gray"
+            android:text="@string/plusResource"
+            android:textColor="@color/ligth_gray"
+            android:textColorHighlight="#070707"
+            android:textColorHint="#1B1A1A"
+            android:textColorLink="@color/ligth_gray"
+            app:rippleColor="@color/ligth_gray"
+            app:strokeColor="@color/ligth_gray" />
+
+        <Button
+            android:id="@+id/MinusButton"
+            android:layout_width="87dp"
+            android:layout_height="53dp"
+            android:shadowColor="@color/ligth_gray"
+            android:text="@string/minusResource"
+            android:textColor="@color/ligth_gray"
+            android:textColorHighlight="@color/ligth_gray"
+            android:textColorHint="@color/ligth_gray"
+            android:textColorLink="@color/ligth_gray"
+            app:rippleColor="@color/ligth_gray"
+            app:strokeColor="@color/ligth_gray" />
+
+        <Button
+            android:id="@+id/DividedByButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equalResource"
+            android:textColor="@color/ligth_gray" />
+
+        <Button
+            android:id="@+id/MultipliedByButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiResource"
+            android:textColor="@color/ligth_gray"
+            android:textColorHighlight="#673AB7" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

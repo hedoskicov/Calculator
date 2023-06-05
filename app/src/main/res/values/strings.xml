@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="add_first_number">add first number</string>
+    <string name="add_second_number">add second number</string>
+    <string name="equalResource">/</string>
+    <string name="multiResource">*</string>
+    <string name="minusResource">-</string>
+    <string name="plusResource">+</string>
+</resources>
